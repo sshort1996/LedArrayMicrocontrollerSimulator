@@ -1,3 +1,25 @@
+# Embedded LED Array and microcontroller simulator
+This project will be split into two parts
+ 1. A simulated array of LED's, represented by memory addresses virtually linked to GP/IO headers. By monitoring the values of these memory addresses, a window will display a grid of LED's turned either on or off. The addresses will be shared with the programme dynamically by the second part of the project, the microcontroller simulator.
+ 2. A simulated microcontroller code, which mallocs a contiguous block of memory to represent the LED array, and controls the values of the arrays through some mechanism, perhaps displaying the time, maybe the temperature, just some data. The trick here will be sharing the memory addresses with the 'LED array'. This component may itself be split into two submodules
+    - A module who's sole responsibility is retreiving memory and sharing it with the microcontroller and LED code.
+    - A module meant to simulate the microcontroller as closely as possible, containing only the logic for manipulating the 'GP/IO header' addresses 
+
+
+
+## Project directory structure 
+ - src/: Contains the project's source code files (.cpp). For larger projects, consider organizing these files into subdirectories that reflect the project's modular structure or components.
+
+
+ - include/: Contains all the header files (.h or .hpp). This separation from source files helps manage dependencies and improves build times. Use subdirectories to organize headers related to specific modules or functionalities.
+
+
+ - lib/: External libraries that your project depends on. You might compile these from source or include pre-compiled binaries. Consider using a package manager like Conan or vcpkg to manage these dependencies.
+
+
+ - bin/: The output directory for the final executable(s) or binary(ies) produced by the project. This keeps the build artifacts separate from the source code.
+
+
 I want to build an embedded led array simulator. I want to write two programmes in C or C++. One programme will act as my microcontroller, and read the values of 64 memory addresses and display their values on an 8*8 grid in a window as if they were real physical LED's. The other programme which will be running at the same time will contain the code that would run on my microcontroller and control the values of the memroy addresses, ie. the LED's. Is this sometjing I can do in C++?
 
 Yes, you can certainly build an embedded LED array simulator with two programs in C or C++ that communicate with each other to simulate the behavior of a microcontroller driving an LED array. This project involves inter-process communication (IPC), graphical user interface (GUI) programming for the LED display, and potentially multithreading depending on how you structure your programs. Here's a high-level overview of how you might approach this:
