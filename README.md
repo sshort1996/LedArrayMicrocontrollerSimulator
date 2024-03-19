@@ -61,3 +61,21 @@ For the two programs to communicate, you'll use a form of IPC. Shared memory is 
 5. **Test and Debug**: Run both programs simultaneously, debug any issues, and refine the simulation.
 
 This project is a fantastic way to learn about IPC, GUI programming, and simulating hardware with software. It's complex enough to be challenging but well within reach with some effort and learning.
+
+## Building the project
+We should probably learn a build system for compiling all this, let's go with Cmake. Each file is compiled as follows:
+ ### `/main.cpp`
+ ```
+ g++ -fopenmp src/main.cpp -o bin/main
+ ```
+ ### `/MicroController/microLogic.cpp`
+ ```
+ g++ src/MicroController/microLogic.cpp -o bin/logMod
+ ```
+ ### `/MicroController/microMem.cpp`
+```
+g++ src/MicroController/microMem.cpp -o bin/memMod
+```
+### `ledArray/ledArray.cpp`
+SDL2, working on it
+
