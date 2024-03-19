@@ -1,0 +1,5 @@
+C:/Users/kultu/shane_stuff/towards_embedded_Systems/cpp/projects/embedded_sim/build/CMakeFiles/logMod.dir
+C:/Users/kultu/shane_stuff/towards_embedded_Systems/cpp/projects/embedded_sim/build/CMakeFiles/memMod.dir
+C:/Users/kultu/shane_stuff/towards_embedded_Systems/cpp/projects/embedded_sim/build/CMakeFiles/main.dir
+C:/Users/kultu/shane_stuff/towards_embedded_Systems/cpp/projects/embedded_sim/build/CMakeFiles/edit_cache.dir
+C:/Users/kultu/shane_stuff/towards_embedded_Systems/cpp/projects/embedded_sim/build/CMakeFiles/rebuild_cache.dir

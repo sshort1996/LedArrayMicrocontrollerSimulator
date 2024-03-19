@@ -26,12 +26,13 @@ int main() {
             int ret2 = system("bin\\logMod.exe");
             break;
         }
-        case 3:{
-            int ret3 = system("bin\\ledArray.exe");
-            break;
-        }
+        // uncomment when we figure out sdl2 compilation
+        // case 3:{
+        //     int ret3 = system("bin\\ledArray.exe");
+        //     break;
+        // }
         default:{
-            cout << "Hello from the root process" << endl;
+            cout << "Hello from the root process  TESTING BUILD SYSTEM" << endl;
         }
         }
 
