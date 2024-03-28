@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
-string main(){
-    return "hello from the logic module!";
+int main() {
+  cout << "hello from the logic module!" << endl;
+  return 0;  // Indicate successful execution
 }

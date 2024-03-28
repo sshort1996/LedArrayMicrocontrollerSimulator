@@ -19,11 +19,11 @@ int main() {
         {
 
         case 1:{
-            int ret1 = system("bin\\memMod.exe");
+            int ret1 = system("bin\\microLogic.exe");
             break;
         }
         case 2:{
-            int ret2 = system("bin\\logMod.exe");
+            int ret2 = system("bin\\microMem.exe");
             break;
         }
         // uncomment when we figure out sdl2 compilation
@@ -32,7 +32,7 @@ int main() {
         //     break;
         // }
         default:{
-            cout << "Hello from the root process  TESTING BUILD SYSTEM" << endl;
+            cout << "Hello from the root process" << endl;
         }
         }
 
