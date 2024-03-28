@@ -6,6 +6,8 @@
 #include <iostream>
 #include <omp.h> 
 #include <cstdlib>
+#include "../include/microMem.h"
+#include "../include/microLogic.h"
 
 using namespace std;
 
@@ -19,11 +21,11 @@ int main() {
         {
 
         case 1:{
-            int ret1 = system("bin\\microLogic.exe");
+            McLogic();
             break;
         }
         case 2:{
-            int ret2 = system("bin\\microMem.exe");
+            returnAddresses(); //int ret2 = system("bin\\microMem.exe");
             break;
         }
         // uncomment when we figure out sdl2 compilation

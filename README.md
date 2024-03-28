@@ -79,3 +79,5 @@ g++ src/MicroController/microMem.cpp -o bin/memMod
 ### `ledArray/ledArray.cpp`
 SDL2, working on it
 
+## Header files and function pointers
+The current design of the main module is dumb, we should refactor the microMem, and microLogic modules to use a header file to initialise the methods in each, and a source file defining these functions. More info [here](https://stackoverflow.com/questions/51488008/how-can-i-call-functions-from-one-cpp-file-in-another-cpp-file).

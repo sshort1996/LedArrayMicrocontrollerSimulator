@@ -1,11 +1,8 @@
 // This module will contain the logic for mallocing a block of memory and sharing 
 // it with our other processes. 
 #include <iostream>
-using namespace std;
-
-#include <iostream>
 #include <cstdlib>
-
+#include "../../include/microMem.h"
 using namespace std;
 
 int* mallocArray(int m, int n){
@@ -17,7 +14,7 @@ int* mallocArray(int m, int n){
     return arr;
 }
 
-int main() {
+int returnAddresses() {
     int m = 5;
     int n = 5;
     
